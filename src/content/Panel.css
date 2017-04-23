@@ -5,6 +5,7 @@
 	z-index:1;
 	padding:48px;
 	flex:0 0 calc(100% - 400px);
+	min-width:640px;
 }
 
 .Panel-content {
