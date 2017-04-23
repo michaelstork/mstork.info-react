@@ -1,0 +1,75 @@
+.Panel-container {
+	background-color:#222;
+	display:flex;
+	position:relative;
+	z-index:1;
+	padding:48px;
+	flex:0 0 calc(100% - 400px);
+}
+
+.Panel-content {
+	background-color:#FFF;
+	position:relative;
+	flex:0 0 100%;
+	font-size:0.85em;
+	color:#444;
+	padding:48px 48px 100px 48px;
+}
+
+.Panel-header {
+	display:flex;
+	margin-bottom:18px;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.Panel-header ~ .Panel-header {
+	margin-top:48px;
+}
+
+.Panel-header h2 {
+	display:flex;
+	align-items:center;
+	font-size:2rem;
+}
+
+.Panel-header h2 img {
+	margin-right:12px;
+	transition:opacity 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	height:2rem;
+	width:2rem;
+}
+
+.Panel-intro p,
+.Panel-details p {
+	line-height:1.8em;
+}
+
+.Panel-intro p + p,
+.Panel-details p + p {
+	color:#00BCD4;
+	text-decoration:underline;
+}
+
+.Panel-screenshots {
+	background-color:#FAFAFA;
+	margin:48px 0;
+	display:flex;
+	align-items:center;
+	padding:18px;
+}
+
+.Panel-screenshots div {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	cursor:pointer;
+	transition:opacity 0.4s $standardCurve;
+	min-height:100px;
+	flex:0 0 120px;
+	padding-bottom:120px;
+}
+
+.Panel-screenshots div + div {
+	margin-left:32px;
+}

@@ -1,0 +1,64 @@
+
+#root {
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex:1 0 auto;
+}
+
+.App {
+  display:flex;
+  flex-direction:column;
+  flex:0 0 100%;
+}
+
+.App-content {
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex:1 0 auto;
+}
+
+.Button {
+  -webkit-appearance:none;
+  outline:none;
+  border:none;
+  box-sizing:border-box;
+  border-radius:18px;
+  height:36px;
+  position:relative;
+  background-color:#00BCD4;
+  cursor:pointer;
+  transition:background-color 0.2s ease-out;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#FFF;
+  font-size:0.75rem;
+  padding:0 32px;
+  white-space:nowrap;
+}
+
+.Button i:first-child {
+    margin-right:4px;
+}
+.Button i:last-child {
+    margin-left:4px;
+}
+
+.Button:hover {
+    background-color:#2D2D2D;
+}
+
+.Button.Alt-button {
+  background-color:#FFF;
+  border:2px solid #00BCD4;
+  color:#222;
+  transition:background-color 0.2s ease-out, color 0.2s ease-out;
+}  
+
+.Button.Alt-button:hover {
+    background-color:#00BCD4;
+    color:#FFF;
+}

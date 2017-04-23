@@ -1,0 +1,32 @@
+html {
+  height:100%;
+}
+
+body {
+  min-height:100%;
+  font-family:'Asap','Helvetica','Arial',sans-serif;
+  display:flex;
+  flex-direction:column;
+  background-color:#2D2D2D;
+  margin:0;
+  padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+
+div {
+	box-sizing:border-box;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
