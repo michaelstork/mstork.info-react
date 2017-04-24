@@ -4,23 +4,58 @@ import './NavIndicator.css';
 
 
 class NavIndicator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeProjectIndex: this.props.projects.findIndex(
+        project => project.slug === this.props.match.params.slug
+      )
+    };
+  }
+
+  componentWillReceiveProps(props) {
+    this.setState((prevState, props) => {
+      return {
+        activeProjectIndex: this.props.projects.findIndex(
+          project => project.slug === this.props.match.params.slug
+        )
+      };
+    });
+  }
+
+  renderIndicator() {
+    return this.props.match.path === '/'
+      ? null
+      : <i className="Nav-indicator-underline"></i>;
+  }
+
+  getItemClassNames(project) {
+    let str = 'Nav-indicator-item';
+    if ((!project && this.props.match.path === '/')
+      || (project && this.props.match.params.slug === project.slug)) {
+      str += ' Nav-indicator-item-active';
+    }
+
+    return str;
+  }
+
 	render() {
     return (
   		<div className="Nav-indicator">
   			<div>
-  				<Link to="/" className="Nav-indicator-item">
+  				<Link to="/" className={this.getItemClassNames(null)}>
             <i className="mdi mdi-account-box-outline"></i>
             <span>About</span>
           </Link>
           {this.props.projects.map((project, index) =>
-            <Link className="Nav-indicator-item"
+            <Link className={this.getItemClassNames(project)}
               to={'/projects/'+project.slug}
               key={project.slug}>
               {padString(index + 1)}
             </Link>
           )}
   			</div>
-        <i className="Nav-indicator-underline"></i>
+        {this.renderIndicator()}
   		</div>
     );
 	}

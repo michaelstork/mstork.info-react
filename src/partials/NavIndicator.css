@@ -1,6 +1,10 @@
 
 .Nav-indicator {
-	position:relative;
+	position:absolute;
+	height:36px;
+	top:-36px;
+	left:0;
+	z-index:2;
 }
 
 .Nav-indicator > div {
@@ -36,7 +40,7 @@
 	transition:transform 0.45s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.Nav-indicator-item:first-child.Nav-indicator-active-item {
+.Nav-indicator-item:first-child.Nav-indicator-item-active {
 	color:#00BCD4;
 }
 
