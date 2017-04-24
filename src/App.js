@@ -11,14 +11,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageViewerSrc: '/images/full/example1.jpg'
+      imageViewerSrc: null
     };
 
     this.setImageViewerSrc = this.setImageViewerSrc.bind(this);
   }
 
   setImageViewerSrc(src) {
-    this.setState({imageViewerSrc: null});
+    this.setState({imageViewerSrc: src ? '/images/full/'+src : null});
   }
 
   render() {
@@ -29,9 +29,12 @@ class App extends Component {
           <div className="App-content">
             <Nav />
             <Route exact path="/" component={About}/>
-            <Route path="/projects/:slug" component={Project} />
+            <Route path="/projects/:slug"
+              component={(props) => <Project {...props} setImageViewerSrc={this.setImageViewerSrc} />}
+            />
           </div>
-          <ImageViewer imageViewerSrc={this.state.imageViewerSrc} closeImageViewer={() => this.setImageViewerSrc(null)} />
+          <ImageViewer imageViewerSrc={this.state.imageViewerSrc}
+            closeImageViewer={() => this.setImageViewerSrc(null)} />
         </div>
       </Router>
       );

@@ -55,7 +55,9 @@ class Project extends React.Component {
               <div className="Panel-intro" dangerouslySetInnerHTML={createMarkup(this.state.project.intro)}></div>
               <div className="Panel-screenshots">
                 {this.state.project.screenshots.map(image =>
-                  <div style={{backgroundImage: 'url(/images/thumbnails/'+image+')'}} key={image}></div>
+                  <div style={{backgroundImage: 'url(/images/thumbnails/'+image+')'}}
+                    onClick={() => this.props.setImageViewerSrc(image)}
+                    key={image}></div>
                 )}
               </div>
               <div className="Panel-details" dangerouslySetInnerHTML={createMarkup(this.state.project.details)}></div>
