@@ -70,7 +70,7 @@
 	background-position:center;
 	background-size:cover;
 	cursor:pointer;
-	transition:opacity 0.4s $standardCurve;
+	transition:opacity 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
 	min-height:100px;
 	flex:0 0 120px;
 	padding-bottom:120px;
