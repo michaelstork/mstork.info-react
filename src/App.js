@@ -2,7 +2,6 @@ import './App.css';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from './partials/Header';
-import Nav from './partials/Nav';
 import About from './content/About';
 import Project from './content/Project';
 import ImageViewer from './ImageViewer';
@@ -27,7 +26,6 @@ class App extends Component {
         <div className="App">
           <Header />
           <div className="App-content">
-            <Nav />
             <Route exact path="/" component={About}/>
             <Route path="/projects/:slug"
               component={(props) => <Project {...props} setImageViewerSrc={this.setImageViewerSrc} />}
