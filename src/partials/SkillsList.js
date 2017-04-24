@@ -21,7 +21,7 @@ const SkillsList = (props) => {
 				</div>
 			)}
 		</div>
-	);
+	)
 }
 
 export default SkillsList;
