@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from './partials/Header';
 import Nav from './partials/Nav';
 import About from './content/About';
-import Projects from './content/Projects';
+import Project from './content/Project';
 import ImageViewer from './ImageViewer';
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
           <div className="App-content">
             <Nav />
             <Route exact path="/" component={About}/>
-            <Route path="/projects" component={Projects}/>
+            <Route path="/projects/:slug" component={Project} />
           </div>
           <ImageViewer imageViewerSrc={this.state.imageViewerSrc} closeImageViewer={() => this.setImageViewerSrc(null)} />
         </div>
