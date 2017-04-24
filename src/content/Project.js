@@ -38,6 +38,16 @@ class Project extends React.Component {
       : '';
   }
 
+  renderLiveLinkButton() {
+    if (!this.state.project.url) return null;
+    return (
+      <Link to={this.state.project.url} className="Button" target="_blank">
+        <i className="mdi mdi-link-variant"></i>
+        <span>{this.createDisplayUrl()}</span>
+      </Link>
+    );
+  }
+
   render() {
     return (
       <div>
@@ -51,10 +61,7 @@ class Project extends React.Component {
                   <img src={'/images/icons/' + this.state.project.icon} alt={this.state.project.title + ' icon'} />
                   <span>{this.state.project.title}</span>
                 </h2>
-                <Link to={this.state.project.url} className="Button">
-                  <i className="mdi mdi-link-variant"></i>
-                  <span>{this.createDisplayUrl()}</span>
-                </Link>
+                {this.renderLiveLinkButton()}
               </div>
               <div className="Panel-info">
                 <div className="Panel-intro" dangerouslySetInnerHTML={createMarkup(this.state.project.intro)}></div>
