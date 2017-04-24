@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 import projects from '../../data/projects.json';
 
 const ProjectsList = () => (
-	<div>
-	 {projects.map(project =>
+  <div>
+    {projects.map(project =>
       <div className="Nav-projects-list-item" key={project.slug}>
         <Link className="Nav-projects-list-item-content" to={'/projects/' + project.slug}>
           <h2>{project.title}</h2>
@@ -12,7 +12,7 @@ const ProjectsList = () => (
         </Link>
       </div>
     )}
-	</div>
+  </div>
 )
 
 export default ProjectsList;

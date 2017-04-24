@@ -2,10 +2,10 @@ import './ImageViewer.css';
 import React from 'react';
 
 class ImageViewer extends React.Component {
-	render() {
+  render() {
     if (!this.props.imageViewerSrc) return null;
 
-		return (
+    return (
       <div className="Image-viewer" onClick={() => this.props.closeImageViewer()}>
         <img src={this.props.imageViewerSrc}  alt="Project Screenshot" />
         <a href={this.props.imageViewerSrc} target="_blank">
@@ -14,8 +14,8 @@ class ImageViewer extends React.Component {
         </a>
         <i className="Image-viewer-close mdi mdi-close"></i>
       </div>
-		);
-	}
+    );
+  }
 }
 
 export default ImageViewer;

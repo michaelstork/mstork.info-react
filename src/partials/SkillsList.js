@@ -1,6 +1,6 @@
 import React from 'react';
 import './SkillsList.css';
-
+ 
 const SkillsList = (props) => {
 	return (
 		<div className="Skills-list">

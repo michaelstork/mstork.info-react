@@ -55,7 +55,7 @@ class NavIndicator extends React.Component {
   render() {
     return (
       <div className="Nav-indicator">
-  			<div>
+        <div>
           <Link to="/" className={this.getItemClassNames(null)}>
             <i className="mdi mdi-account-box-outline"></i>
             <span>About</span>
@@ -69,7 +69,7 @@ class NavIndicator extends React.Component {
           )}
         </div>
         {this.renderIndicator()}
-  		</div>
+      </div>
     );
 	}
 }
