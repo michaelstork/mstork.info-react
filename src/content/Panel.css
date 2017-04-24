@@ -48,6 +48,11 @@
 
 .Panel-intro p + p,
 .Panel-details p + p {
+	margin-top:24px;
+}
+
+.Panel-intro a,
+.Panel-details a {
 	color:#00BCD4;
 	text-decoration:underline;
 }
