@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillsList from '../partials/SkillsList';
+import SkillsList from '../partials/Skills';
 import Nav from '../partials/Nav';
 import NavIndicator from '../partials/NavIndicator';
 import info from '../../data/info.json';

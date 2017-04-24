@@ -1,5 +1,5 @@
 import React from 'react';
-import './SkillsList.css';
+import './Skills.css';
  
 const SkillsList = (props) => {
 	return (
