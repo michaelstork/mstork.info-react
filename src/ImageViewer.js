@@ -6,7 +6,7 @@ class ImageViewer extends React.Component {
     if (!this.props.imageViewerSrc) return null;
 
 		return (
-      <div className="Image-viewer" onClick={() => this.props.setImageViewerSrc(null)}>
+      <div className="Image-viewer" onClick={() => this.props.closeImageViewer()}>
         <img src={this.props.imageViewerSrc}  alt="Project Screenshot" />
         <a href={this.props.imageViewerSrc} target="_blank">
           <i className="mdi mdi-open-in-new"></i>
