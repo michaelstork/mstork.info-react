@@ -1,94 +1,128 @@
 {
-	"about": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+	"about": "<p>I'm a web developer living in Denver, Colorado, looking for local opportunities to build awesome things. Some of the larger projects I've worked on recently are listed <span class=\"mobile-only\">in the menu</span><span class=\"desktop-only\">to the left</span>; take a look and feel free to get in contact if you have any questions or would like to see references or code samples.</p><p>My skills are mostly centered around front-end development (HTML, CSS, Javscript), although I have extensive experience with PHP and SQL as well. I'm excited about the current trends in front-end development, from build tools to module systems to the seemingly endless train of new Javascript frameworks. Most recently I've been building things with <a href=\"https://vuejs.org\">VueJs</a>, and I have a few year's worth of experience with <a href=\"https://angularjs.org\">Angular</a> v1 as well. For styling I generally use <a href=\"http://sass-lang.com/\">Sass</a> and <a href=\"https://github.com/postcss/postcss\">PostCSS</a>. For build tools, I'm a huge fan of <a href=\"https://webpack.github.io/\">Webpack</a>.</p>",
 	"skills": [
 		[
 			{
-				"title": "Skill Type #1",
+				"title": "Front-End",
 				"skills": [
 					{
-						"title": "Skill #1",
+						"title": "HTML | CSS | Sass",
 						"url": null
 					},
 					{
-						"title": "Skill #2",
+						"title": "Javascript (ES6)",
 						"url": null
+					}
+				]
+			},
+			{
+				"title": "Development Tools",
+				"skills": [
+					{
+						"title": "Git",
+						"url": "https://git-scm.com/"
 					},
 					{
-						"title": "Skill #3",
-						"url": null
+						"title": "Webpack",
+						"url": "https://webpack.github.io/"
 					},
 					{
-						"title": "Skill #4",
-						"url": null
+						"title": "PostCSS",
+						"url": "https://github.com/postcss/postcss"
+					},
+					{
+						"title": "Gulp",
+						"url": "http://gulpjs.com/"
+					},
+					{
+						"title": "Jasmine",
+						"url": "https://jasmine.github.io/"
 					}
 				]
 			}
 		],
 		[
 			{
-				"title": "Skill Type #2",
+				"title": "Frameworks & Libraries",
 				"skills": [
 					{
-						"title": "Skill #1",
-						"url": null
+						"title": "VueJs",
+						"url": "https://vuejs.org/"
 					},
 					{
-						"title": "Skill #2",
-						"url": null
+						"title": "AngularJs",
+						"url": "https://angularjs.org/"
 					},
 					{
-						"title": "Skill #3",
-						"url": null
+						"title": "Node.js",
+						"url": "https://nodejs.org/en/"
+					},
+					{
+						"title": "jQuery",
+						"url": "https://jquery.com/"
 					}
 				]
 			}
 		],
 		[
 			{
-				"title": "Skill Type #3",
+				"title": "Server Side",
 				"skills": [
 					{
-						"title": "Skill #1",
+						"title": "PHP",
+						"url": "http://www.php.net/"
+					},
+					{
+						"title": "MySQL | MariaDB",
+						"url": "https://mariadb.org/"
+					},
+					{
+						"title": "Linux (Ubuntu|Debian|CentOS)",
 						"url": null
 					},
 					{
-						"title": "Skill #2",
-						"url": null
+						"title": "Apache",
+						"url": "https://httpd.apache.org/"
 					},
 					{
-						"title": "Skill #3",
-						"url": null
+						"title": "NGINX",
+						"url": "https://www.nginx.com/resources/wiki/"
+					}
+				]
+			},
+			{
+				"title": "Development Tools",
+				"skills": [
+					{
+						"title": "Composer",
+						"url": "https://getcomposer.org/"
 					},
 					{
-						"title": "Skill #4",
-						"url": null
-					},
-					{
-						"title": "Skill #5",
-						"url": null
+						"title": "Vagrant",
+						"url": "https://www.vagrantup.com/"
 					}
 				]
 			}
 		],
 		[
 			{
-				"title": "Skill Type #4",
+				"title": "Frameworks & Libraries",
 				"skills": [
 					{
-						"title": "Skill #1",
-						"url": null
+						"title": "Laravel",
+						"url": "https://laravel.com/"
 					},
 					{
-						"title": "Skill #2",
-						"url": null
+						"title": "LiftKit",
+						"url": "https://github.com/liftkit/liftkit"
 					},
 					{
-						"title": "Skill #3",
-						"url": null
+						"title": "CodeIgniter",
+						"url": "https://codeigniter.com/"
 					},
 					{
-						"title": "Skill #4",
-						"url": null
+						"title": "PHPUnit",
+						"url": "https://phpunit.de/"
 					}
 				]
 			}
