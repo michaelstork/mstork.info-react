@@ -7,26 +7,39 @@ class NavIndicator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeProjectIndex: this.props.projects.findIndex(
-        project => project.slug === this.props.match.params.slug
-      )
+      activeProjectIndex: this.getProjectIndexBySlug(this.props.match.params.slug)
     };
   }
 
   componentWillReceiveProps(props) {
+    this.setActiveProjectIndex(
+      this.getProjectIndexBySlug(props.match.params.slug)
+    );
+  }
+
+  setActiveProjectIndex(index) {
     this.setState((prevState, props) => {
-      return {
-        activeProjectIndex: this.props.projects.findIndex(
-          project => project.slug === this.props.match.params.slug
-        )
-      };
+      return {activeProjectIndex: index};
     });
+  }
+
+  getProjectIndexBySlug(slug) {
+    const index = this.props.projects.findIndex(
+      project => project.slug === slug
+    );
+    return (index >= 0 ? index : null);
+  }
+
+  getIndicatorStyle() {
+    return {
+      transform: 'translateX('+ (100 * this.state.activeProjectIndex) +'%)'
+    };
   }
 
   renderIndicator() {
     return this.props.match.path === '/'
       ? null
-      : <i className="Nav-indicator-underline"></i>;
+      : <i className="Nav-indicator-underline" style={this.getIndicatorStyle()}></i>;
   }
 
   getItemClassNames(project) {
