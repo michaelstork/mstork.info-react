@@ -1,0 +1,52 @@
+
+.Nav-indicator {
+	position:relative;
+}
+
+.Nav-indicator > div {
+	list-style-type:none;	
+	height:36px;
+	display:flex;
+}
+
+.Nav-indicator-item {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:128px;
+	height:36px;
+	cursor:pointer;
+	font-size:0.7rem;
+	color:#999;
+	transition:color 0.2s ease-out;
+}
+
+.Nav-indicator-item-active,
+.Nav-indicator-item:hover {
+	color:#FFF;
+}
+
+.Nav-indicator-underline {
+	width:128px;
+	height:2px;
+	background-color:#00BCD4;
+	position:absolute;
+	bottom:0;
+	left:128px;
+	transition:transform 0.45s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.Nav-indicator-item:first-child.Nav-indicator-active-item {
+	color:#00BCD4;
+}
+
+.Nav-indicator-item:first-child i {
+	font-size:1.5em;
+	margin-right:6px;
+}
+
+.Nav-indicator-item:first-child span {
+	font-size:0.85em;
+	text-transform:uppercase;
+	letter-spacing:0.5px;
+}
