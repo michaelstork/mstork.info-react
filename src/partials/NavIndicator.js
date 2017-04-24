@@ -52,11 +52,11 @@ class NavIndicator extends React.Component {
     return str;
   }
 
-	render() {
+  render() {
     return (
-  		<div className="Nav-indicator">
+      <div className="Nav-indicator">
   			<div>
-  				<Link to="/" className={this.getItemClassNames(null)}>
+          <Link to="/" className={this.getItemClassNames(null)}>
             <i className="mdi mdi-account-box-outline"></i>
             <span>About</span>
           </Link>
@@ -67,7 +67,7 @@ class NavIndicator extends React.Component {
               {padString(index + 1)}
             </Link>
           )}
-  			</div>
+        </div>
         {this.renderIndicator()}
   		</div>
     );
