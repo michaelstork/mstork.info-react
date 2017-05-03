@@ -32,6 +32,10 @@ class About extends React.Component {
                 <h2>
                   <span>About</span>
                 </h2>
+                <a href={this.state.contact.linkedin} target="_blank" className="Button">
+                  <i className="mdi mdi-linkedin-box"></i>
+                  <span>LinkedIn</span>
+                </a>
               </div>
               <div className="Panel-info">
                 <div className="Panel-intro" dangerouslySetInnerHTML={createMarkup(this.state.info.about)}></div>
