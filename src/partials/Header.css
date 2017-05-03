@@ -17,6 +17,49 @@
 	padding:18px 18px 0 18px;
 }
 
+.App-header .Menu-target {
+	width:24px;
+	height:24px;
+	cursor:pointer;
+	position:absolute;
+	top:18px;
+	right:18px;
+
+	display:none;
+}
+
+.App-header .Menu-target line {
+	transition:transform 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	stroke:#FFF;
+	stroke-width:3px;
+}
+
+.App-header .Menu-target:not(.Active) line:first-of-type {
+	transform:rotate(-45deg) translate(-8px, 2px);
+}
+
+.App-header .Menu-target:not(.Active) line:nth-of-type(2) {
+	transform:scale(1);
+}
+
+.App-header .Menu-target:not(.Active) line:last-of-type {
+	transform:rotate(45deg) translate(-12px, -2px);
+}
+
+
+.App-header .Menu-target line:first-of-type {
+	transform-origin:0 0;
+}
+
+.App-header .Menu-target line:nth-of-type(2) {
+	transform-origin:50% 50%;
+	transform:scale(0);
+}
+
+.App-header .Menu-target line:last-of-type {
+	transform-origin:0 100%;
+}
+
 .App-header h1 {
 	font-size:0.8em;
 	cursor:pointer;
@@ -69,4 +112,33 @@
 	position:relative;
 	top:2px;
 	left:-3px;
+}
+
+@media (max-width: 768px) {
+	.App-header {
+		flex:0 0 100px;
+		justify-content:flex-start;
+		flex-direction:column;
+	}
+
+	.App-header-top {
+		flex-direction:column;
+		padding:18px;
+		height:100px;
+	}
+
+	.App-header .Menu-target {
+		display:block;
+	}
+
+	.App-header h1 {
+		padding-left:0;
+	}
+
+	.App-header-contact-info {
+		margin-top:14px;
+		display:flex;
+		flex-wrap:wrap;
+		padding-right:0;
+	}
 }

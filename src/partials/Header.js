@@ -6,6 +6,13 @@ import contact from '../../data/contact.json';
 const Header = () => (
   <header className="App-header">
     <div className="App-header-top">
+      <svg className="Menu-target" x="0px" y="0px" viewBox="0 0 50 50">
+        <g>
+          <line x1="0" y1="0" x2="50" y2="50" />
+          <line x1="0" y1="24" x2="50" y2="24" />
+          <line x1="50" y1="0" x2="0" y2="50" />
+        </g>
+      </svg>
       <h1>
         <Link to="/">
           <span className="name">{contact.name}</span>

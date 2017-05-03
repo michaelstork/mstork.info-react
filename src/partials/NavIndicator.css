@@ -54,3 +54,9 @@
 	text-transform:uppercase;
 	letter-spacing:0.5px;
 }
+
+@media (max-width:768px) {
+	.Nav-indicator {
+		display:none;
+	}
+}
