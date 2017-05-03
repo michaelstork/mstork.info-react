@@ -52,3 +52,13 @@
     z-index:3;
     cursor:pointer;
 }
+
+@media (max-width: 768px) {
+    .Image-viewer a {
+        bottom:12px;
+        left:0;
+        right:0;
+        top:auto;
+        margin:auto;
+    }
+}

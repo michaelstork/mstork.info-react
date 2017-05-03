@@ -50,3 +50,39 @@
 	color:#666;
 	white-space:nowrap;
 }
+
+@media (max-width: 1500px) {
+	.Skills-list {
+		justify-content:space-between;
+		flex-wrap:wrap;
+	}
+	
+	.Skills-list-group {
+		flex:0 0 48%;
+		max-width:none;
+	}
+
+	.Skills-list-group + .Skills-list-group {
+		margin-left:0;
+	}
+}
+
+@media (max-width: 1300px) {
+	.Skills-list p {
+		margin:24px 0 8px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.Skills-list li a,
+	.Skills-list li span {
+		font-size:0.9em;
+	}
+}
+
+
+@media (max-width: 600px) {
+	.Skills-list-group {
+		flex:0 0 100%;
+	}
+}
