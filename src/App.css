@@ -13,9 +13,13 @@
 	flex:1 0 100%;
 }
 
+.App.Menu-active {
+    max-height:100vh;
+    overflow:hidden;
+}
+
 .App-content {
 	display:flex;
-	flex-direction:column;
     flex:1 0 auto;
 }
 
@@ -23,7 +27,7 @@
 	position:relative;
 	z-index:1;
 	display:flex;
-	flex:1 0 auto;
+    flex:0 1 auto;
 }
 
 .Button {
@@ -78,5 +82,6 @@
 
     .App-content > div {
         flex-direction:column;
+        flex:1 0 auto;
     }
 }

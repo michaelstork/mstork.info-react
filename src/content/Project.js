@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Nav from '../partials/Nav';
 import NavIndicator from '../partials/NavIndicator';
 import projects from '../../data/projects.json';
 import './Panel.css';
@@ -52,7 +51,6 @@ class Project extends React.Component {
     return (
       <div>
         <NavIndicator {...this.props} projects={projects} />
-        <Nav />
         <div className="Panel-container">
           <div className="Panel-content">
             <div>

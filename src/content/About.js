@@ -1,6 +1,5 @@
 import React from 'react';
 import SkillsList from '../partials/Skills';
-import Nav from '../partials/Nav';
 import NavIndicator from '../partials/NavIndicator';
 import info from '../../data/info.json';
 import projects from '../../data/projects.json';
@@ -24,7 +23,6 @@ class About extends React.Component {
     return (
       <div>
         <NavIndicator {...this.props} projects={projects} />
-        <Nav />
         <div className="Panel-container">
           <div className="Panel-content">
             <div>

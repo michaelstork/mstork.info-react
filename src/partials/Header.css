@@ -34,15 +34,16 @@
 	stroke-width:3px;
 }
 
-.App-header .Menu-target:not(.Active) line:first-of-type {
+
+.App:not(.Menu-active) .App-header .Menu-target line:first-of-type {
 	transform:rotate(-45deg) translate(-8px, 2px);
 }
 
-.App-header .Menu-target:not(.Active) line:nth-of-type(2) {
+.App:not(.Menu-active) .App-header .Menu-target line:nth-of-type(2) {
 	transform:scale(1);
 }
 
-.App-header .Menu-target:not(.Active) line:last-of-type {
+.App:not(.Menu-active) .App-header .Menu-target line:last-of-type {
 	transform:rotate(45deg) translate(-12px, -2px);
 }
 
